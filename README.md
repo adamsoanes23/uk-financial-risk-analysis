@@ -34,13 +34,14 @@ The S&P 500 significantly outperformed UK assets, delivering 196% total returns 
 
 ## Assets Analysed
 - **FTSE 100 Index** – UK equity market benchmark  
-- **UK Government Bond ETF** – lower-risk, defensive asset  
+- **UK Government Bond** – lower-risk, defensive asset  
 - **GBP/USD Exchange Rate** – currency exposure for UK-based investors  
 - **S&P 500 Index** – global equity benchmark  
 
 **Data Source:** Yahoo Finance  
 **Time Period:** January 2015 - December 2024  
 **Frequency:** Daily closing prices
+
 **Note:** This 10-year period includes major market events (Brexit referendum 2016, COVID-19 pandemic 2020, inflation surge 2022-2023) which impacted asset performance.
 
 ## Methodology
