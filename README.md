@@ -37,13 +37,9 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 *To be completed once analysis is finalised. Recommendations will translate insights into actionable investment guidance.*
 
 ## Dashboard
-The Power BI dashboard (`powerbi/uk_financial_risk_dashboard.pbix`) visualises:
-- Cumulative returns
-- Rolling volatility (30-day)
-- Maximum drawdowns
-- Asset correlations
+This dashboard visualises cumulative returns, rolling volatility, maximum drawdowns, and correlations across UK-relevant assets to support portfolio decision-making.
 
-Data is sourced from processed CSV outputs generated via Python and SQLite.
+![Power BI Dashboard](images/powerbi_dashboard.png)
 
 ## Business Value
 *To be completed once analysis is finalised. Will highlight practical use for stakeholders and decision-making.*
