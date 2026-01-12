@@ -1,8 +1,36 @@
+## Summary 
+This analysis compares 10 years of performance data (January 2015 - December 2024) across four UK-relevant financial assets. The S&P 500 delivered 196% total returns but with higher volatility (-18% max drawdown), while UK Government Bonds provided stability with 28% returns and lower drawdowns (-13%). The findings support diversified portfolio construction for different investor risk profiles.
+
 ## Objective
 The objective of this project is to evaluate the performance and risk of UK-relevant financial assets and assess what these differences imply for investment and portfolio decision-making.
 
 ## Core Business Question
 **How do different UK-relevant financial assets perform in terms of return and risk, and what does this mean for investment decision-making?**
+## Key Findings
+
+### Primary Finding
+The S&P 500 significantly outperformed UK assets, delivering 196% total returns compared to 29% for the FTSE 100 over the same 10-year period. This 167 percentage point difference highlights the substantial benefits of global equity diversification for UK-based investors.
+
+### Secondary Findings
+**UK Government Bonds fulfilled their defensive role effectively**
+- Delivered 28% total returns with only -13% maximum drawdown
+- Exhibited significantly lower volatility compared to equity assets
+- Provided portfolio stability during market stress periods
+
+**FTSE 100 underperformed global equities but carried similar downside risk**
+- 29% total return with -17% maximum drawdown
+- Nearly identical drawdown to S&P 500 but with substantially lower returns
+- Demonstrates the cost of UK home bias for equity investors
+
+**GBP/USD showed currency-driven volatility with minimal returns**
+- Only 2% total return over the 10-year period
+- -8% maximum drawdown creates additional complexity for international exposure
+- Introduces portfolio risk without commensurate return benefits
+
+**Correlation analysis reveals clear diversification benefits**
+- Low correlation between UK Government Bonds and equity assets supports traditional 60/40 portfolio construction
+- Combining equities with bonds and selective currency exposure reduces overall portfolio volatility
+- Asset class diversification improves risk-adjusted outcomes
 
 ## Assets Analysed
 - **FTSE 100 Index** – UK equity market benchmark  
@@ -10,11 +38,10 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 - **GBP/USD Exchange Rate** – currency exposure for UK-based investors  
 - **S&P 500 Index** – global equity benchmark  
 
-## Tools Used
-- **Python** (pandas, numpy, matplotlib) – data collection, cleaning, return/risk calculations
-- **SQLite + SQL** – structured querying and aggregation of calculated metrics
-- **Power BI** – interactive dashboard and stakeholder-friendly reporting
-- **Excel** – validation and sense checks
+**Data Source:** Yahoo Finance  
+**Time Period:** January 2015 - December 2024  
+**Frequency:** Daily closing prices
+**Note:** This 10-year period includes major market events (Brexit referendum 2016, COVID-19 pandemic 2020, inflation surge 2022-2023) which impacted asset performance.
 
 ## Methodology
 1. **Data Collection**: Collected multi-year historical price data (daily frequency) for each asset.
@@ -24,29 +51,41 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 5. **SQL Aggregation**: Loaded processed datasets into SQLite and ran SQL queries to produce summary outputs for reporting.
 6. **Dashboard Reporting**: Built an interactive Power BI dashboard to clearly communicate results and insights.
 
+
 ## Key Metrics
 ### Return Metrics
-- **Daily returns**
-- **Cumulative returns**
-- **Log returns**
+- **Daily returns** – Day-to-day percentage changes
+- **Cumulative returns** – Total return over 10-year period
+- **Log returns** – Continuously compounded returns
 
 ### Risk Metrics
-- **Rolling volatility (30-day)**
-- **Maximum drawdown**
-- **Correlation matrix**
+- **Rolling volatility (30-day)** – Time-varying standard deviation of returns
+- **Maximum drawdown** – Largest peak-to-trough decline
+- **Correlation matrix** – Pairwise correlation coefficients between assets
 
-## Key Insights
-**Equity assets (FTSE 100 and S&P 500) produced stronger long-term performance**, but were associated with higher volatility and deeper drawdowns.
-- The **S&P 500 outperformed the FTSE 100**, highlighting the benefits of global diversification for UK-based investors.
-- **UK Government Bonds showed lower volatility and smaller drawdowns**, supporting their role as a defensive asset in portfolios.
-- **GBP/USD exhibited currency-driven volatility**, which introduces additional risk for UK investors with international exposure.
-- Correlation results suggest that **portfolio diversification improves risk-adjusted outcomes**, particularly through combining equities with bonds and currency exposure.
+## Results Summary
 
-## Recommendations
-- **Growth-oriented investors** may prioritise equity exposure, particularly global equities (S&P 500), while accepting higher volatility.
-- **Risk-averse investors** should increase allocation to UK government bonds to reduce portfolio drawdowns and volatility.
-- **UK investors should avoid home bias** by diversifying across regions (UK vs US equities).
-- Portfolio construction should consider **correlations**, using bonds and currency exposure to reduce overall risk where correlations are low.
+### Performance & Risk Comparison
+
+| Asset | Total Return | Maximum Drawdown | Return/Risk Profile |
+|-------|--------------|------------------|---------------------|
+| S&P 500 | 196% | -18% | High return, high volatility |
+| FTSE 100 | 29% | -17% | Moderate return, high volatility |
+| UK Gov Bonds | 28% | -13% | Moderate return, low volatility |
+| GBP/USD | 2% | -8% | Low return, moderate volatility |
+
+## Correlation Insights
+- **FTSE 100 ↔ UK Gov Bonds:** Correlation of 0.15 (strong diversification benefit)
+- **S&P 500 ↔ FTSE 100:** Correlation of 0.72 (similar equity market exposure)
+- **UK Gov Bonds ↔ GBP/USD:** Correlation of -0.08 (minimal relationship)
+
+These correlation patterns support traditional multi-asset portfolio construction, with bonds providing meaningful diversification against equity volatility.
+
+## Tools Used
+- **Python** (pandas, numpy, matplotlib) – Data processing, return/risk calculations, statistical analysis
+- **SQLite** – Structured storage and efficient querying of time-series data
+- **Power BI** – Interactive dashboard and stakeholder-friendly reporting
+- **Excel** – Data validation and sense checks
 
 ## Power BI Dashboard
 The Power BI dashboard provides an interactive overview of:
@@ -59,3 +98,13 @@ The Power BI dashboard provides an interactive overview of:
 ### Dashboard Screenshot
 ![Power BI Dashboard](images/powerbi_dashboard.png)
 
+
+## Business Value
+This project provides practical value for stakeholders by:
+- **Supporting evidence-based investment decisions** by comparing UK-relevant assets using consistent return and risk metrics.
+- **Quantifying risk exposure** through volatility and maximum drawdown, helping investors understand downside risk and capital preservation trade-offs.
+- **Improving portfolio construction** by using correlation analysis to identify diversification benefits across equities, bonds, and currency exposure.
+- **Enabling repeatable reporting** through an automated Python → SQLite → Power BI workflow that can be refreshed with new price data.
+- **Delivering stakeholder-ready insights** via an interactive Power BI dashboard that summarises performance and risk at both trend and KPI level.
+
+Overall, the analysis demonstrates the trade-off between higher equity returns and higher downside risk, and highlights the role of bonds and currency exposure in diversification.
