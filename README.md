@@ -37,7 +37,13 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 *To be completed once analysis is finalised. Recommendations will translate insights into actionable investment guidance.*
 
 ## Dashboard
-*To be completed once analysis is finalised. Dashboard will provide interactive comparison and risk visualisation.*
+The Power BI dashboard (`powerbi/uk_financial_risk_dashboard.pbix`) visualises:
+- Cumulative returns
+- Rolling volatility (30-day)
+- Maximum drawdowns
+- Asset correlations
+
+Data is sourced from processed CSV outputs generated via Python and SQLite.
 
 ## Business Value
 *To be completed once analysis is finalised. Will highlight practical use for stakeholders and decision-making.*

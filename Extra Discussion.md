@@ -6,7 +6,7 @@ Calculations:
 Daily Returns 
 Definition - Percentage change in price from one day to the next
 Formula - R_t = (P_t - P_{t-1}) / P_{t-1}
-Benefits - Tells short term performance, day to day gains and losses, raw inputr for risk metrics
+Benefits - Tells short term performance, day to day gains and losses, raw input for risk metrics
 Limitations - Hard to interpret long term performance and no compounding information
 
 Cumulative Returns 
