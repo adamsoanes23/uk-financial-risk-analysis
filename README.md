@@ -6,8 +6,8 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 
 ## Core Business Question
 **How do different UK-relevant financial assets perform in terms of return and risk, and what does this mean for investment decision-making?**
-## Key Findings
 
+## Key Findings
 ### Primary Finding
 The S&P 500 significantly outperformed UK assets, delivering 196% total returns compared to 29% for the FTSE 100 over the same 10-year period. This 167 percentage point difference highlights the substantial benefits of global equity diversification for UK-based investors.
 
@@ -51,7 +51,6 @@ The S&P 500 significantly outperformed UK assets, delivering 196% total returns 
 5. **SQL Aggregation**: Loaded processed datasets into SQLite and ran SQL queries to produce summary outputs for reporting.
 6. **Dashboard Reporting**: Built an interactive Power BI dashboard to clearly communicate results and insights.
 
-
 ## Key Metrics
 ### Return Metrics
 - **Daily returns** – Day-to-day percentage changes
@@ -64,7 +63,6 @@ The S&P 500 significantly outperformed UK assets, delivering 196% total returns 
 - **Correlation matrix** – Pairwise correlation coefficients between assets
 
 ## Results Summary
-
 ### Performance & Risk Comparison
 
 | Asset | Total Return | Maximum Drawdown | Return/Risk Profile |
@@ -97,7 +95,6 @@ The Power BI dashboard provides an interactive overview of:
 
 ### Dashboard Screenshot
 ![Power BI Dashboard](images/powerbi_dashboard.png)
-
 
 ## Business Value
 This project provides practical value for stakeholders by:
