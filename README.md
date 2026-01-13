@@ -1,5 +1,5 @@
 ## Summary 
-This analysis compares 10 years of performance data (January 2015 - December 2024) across four UK-relevant financial assets. The S&P 500 delivered 196% total returns but with higher volatility (-18% max drawdown), while UK Government Bonds provided stability with 28% returns and lower drawdowns (-13%). The findings support diversified portfolio construction for different investor risk profiles.
+This project analyses 10 years of daily data (Jan 2015–Dec 2024) across the FTSE 100, UK Government Bonds, GBP/USD, and the S&P 500 to compare return and risk characteristics relevant to UK investors. The S&P 500 delivered the highest total return (196%) but with the largest drawdown (-18%), while UK Government Bonds provided stability (28% return, -13% drawdown) and GBP/USD behaved largely independently (0.00–0.03 correlation), supporting the value of diversification in portfolio construction.
 
 ## Objective
 The objective of this project is to evaluate the performance and risk of UK-relevant financial assets and assess what these differences imply for investment and portfolio decision-making.
@@ -7,30 +7,20 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 ## Core Business Question
 **How do different UK-relevant financial assets perform in terms of return and risk, and what does this mean for investment decision-making?**
 
+
 ## Key Findings
 ### Primary Finding
-The S&P 500 significantly outperformed UK assets, delivering 196% total returns compared to 29% for the FTSE 100 over the same 10-year period. This 167 percentage point difference suggests potential benefits of looking beyond UK-only equities.
-
+- The **S&P 500 delivered the highest total return (196%)** over the 10-year period, substantially outperforming the **FTSE 100 (29%)**, demonstrating the potential benefit of global equity exposure for UK-based investors.
 ### Secondary Findings
-**UK Government Bonds fulfilled their defensive role effectively**
-- Delivered 28% total returns with only -13% maximum drawdown
-- Exhibited significantly lower volatility compared to equity assets
-- Lower volatility and smaller drawdowns support their role as a portfolio stabilizer
+- **UK Government Bonds delivered stable performance (28% total return)** with a smaller maximum drawdown (**-13%**) compared to equities, reinforcing their role as a lower-risk asset.
+- The **FTSE 100 produced similar downside risk to the S&P 500** (max drawdown **-17% vs -18%**) but delivered far lower returns, highlighting the opportunity cost of holding only UK equities.
+- **GBP/USD delivered minimal overall return (2%)**, but behaved differently from equities and bonds, showing that currency exposure represents a separate source of portfolio movement.
+- **Correlation results show equities are moderately linked** (FTSE 100 ↔ S&P 500 correlation **0.53**), while **GBP/USD is largely uncorrelated** with other assets (**0.00–0.03**). FTSE 100 and UK Government Bonds were **very highly correlated (0.99)** during this period, meaning they offered limited diversification benefit against each other.
 
-**FTSE 100 underperformed US equities but carried similar downside risk**
-- 29% total return with -17% maximum drawdown
-- Nearly identical drawdown to S&P 500 but with substantially lower returns
-- Suggests potential costs of UK-only equity portfolios
-
-**GBP/USD exhibited volatility that affects international equity returns**
-- Only 2% total return over the 10-year period
-- -8% maximum drawdown adds currency risk to international holdings
-- UK investors face exchange rate volatility when holding US assets
-
-**Correlation analysis reveals diversification potential**
-- Low correlation (0.15) between UK Government Bonds and FTSE 100 suggests bonds could offset equity volatility
-- S&P 500 and FTSE 100 show moderate correlation (0.72), indicating some shared equity market risk
-- These correlation patterns suggest potential benefits from multi-asset portfolios
+## Correlation Insights
+- **FTSE 100 and UK Government Bonds are very highly correlated (0.99)**, meaning they moved in a very similar way over the period analysed and provided limited diversification benefit against each other.
+- **The S&P 500 is moderately correlated with both the FTSE 100 (0.53) and UK Government Bonds (0.53)**, suggesting some shared market risk, but not perfect overlap.
+- **GBP/USD has near-zero correlation with all other assets (0.00–0.03)**, indicating that currency exposure behaves largely independently compared to equities and bonds.
 
 ## Assets Analysed
 - **FTSE 100 Index** – UK equity market benchmark  
@@ -72,13 +62,6 @@ The S&P 500 significantly outperformed UK assets, delivering 196% total returns 
 | FTSE 100 | 29% | -17% | Moderate return, high volatility |
 | UK Gov Bonds | 28% | -13% | Moderate return, low volatility |
 | GBP/USD | 2% | -8% | Low return, moderate volatility |
-
-## Correlation Insights
-- **FTSE 100 ↔ UK Gov Bonds:** Correlation of 0.15 (strong diversification benefit)
-- **S&P 500 ↔ FTSE 100:** Correlation of 0.72 (similar equity market exposure)
-- **UK Gov Bonds ↔ GBP/USD:** Correlation of -0.08 (minimal relationship)
-
-These low correlations between bonds and equities suggest potential for volatility reduction in combined portfolios.
 
 ## Tools Used
 - **Python** (pandas, numpy) – Data processing, return/risk calculations, statistical analysis
