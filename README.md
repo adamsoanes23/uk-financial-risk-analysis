@@ -9,34 +9,34 @@ The objective of this project is to evaluate the performance and risk of UK-rele
 
 ## Key Findings
 ### Primary Finding
-The S&P 500 significantly outperformed UK assets, delivering 196% total returns compared to 29% for the FTSE 100 over the same 10-year period. This 167 percentage point difference highlights the substantial benefits of global equity diversification for UK-based investors.
+The S&P 500 significantly outperformed UK assets, delivering 196% total returns compared to 29% for the FTSE 100 over the same 10-year period. This 167 percentage point difference suggests potential benefits of looking beyond UK-only equities.
 
 ### Secondary Findings
 **UK Government Bonds fulfilled their defensive role effectively**
 - Delivered 28% total returns with only -13% maximum drawdown
 - Exhibited significantly lower volatility compared to equity assets
-- Provided portfolio stability during market stress periods
+- Lower volatility and smaller drawdowns support their role as a portfolio stabilizer
 
-**FTSE 100 underperformed global equities but carried similar downside risk**
+**FTSE 100 underperformed US equities but carried similar downside risk**
 - 29% total return with -17% maximum drawdown
 - Nearly identical drawdown to S&P 500 but with substantially lower returns
-- Demonstrates the cost of UK home bias for equity investors
+- Suggests potential costs of UK-only equity portfolios
 
-**GBP/USD showed currency-driven volatility with minimal returns**
+**GBP/USD exhibited volatility that affects international equity returns**
 - Only 2% total return over the 10-year period
-- -8% maximum drawdown creates additional complexity for international exposure
-- Introduces portfolio risk without commensurate return benefits
+- -8% maximum drawdown adds currency risk to international holdings
+- UK investors face exchange rate volatility when holding US assets
 
-**Correlation analysis reveals clear diversification benefits**
-- Low correlation between UK Government Bonds and equity assets supports traditional 60/40 portfolio construction
-- Combining equities with bonds and selective currency exposure reduces overall portfolio volatility
-- Asset class diversification improves risk-adjusted outcomes
+**Correlation analysis reveals diversification potential**
+- Low correlation (0.15) between UK Government Bonds and FTSE 100 suggests bonds could offset equity volatility
+- S&P 500 and FTSE 100 show moderate correlation (0.72), indicating some shared equity market risk
+- These correlation patterns suggest potential benefits from multi-asset portfolios
 
 ## Assets Analysed
 - **FTSE 100 Index** – UK equity market benchmark  
 - **UK Government Bond** – lower-risk, defensive asset  
 - **GBP/USD Exchange Rate** – currency exposure for UK-based investors  
-- **S&P 500 Index** – global equity benchmark  
+- **S&P 500 Index** – US equity market benchmark 
 
 **Data Source:** Yahoo Finance  
 **Time Period:** January 2015 - December 2024  
@@ -45,7 +45,7 @@ The S&P 500 significantly outperformed UK assets, delivering 196% total returns 
 **Note:** This 10-year period includes major market events (Brexit referendum 2016, COVID-19 pandemic 2020, inflation surge 2022-2023) which impacted asset performance.
 
 ## Methodology
-1. **Data Collection**: Collected multi-year historical price data (daily frequency) for each asset.
+1. **Data Collection**: Collected 10-year historical price data (daily frequency) for each asset from Yahoo Finance.
 2. **Data Cleaning & Alignment**: Cleaned datasets and aligned them to a common set of dates to ensure like-for-like comparisons.
 3. **Return Calculations**: Converted price series into daily returns, cumulative returns, and log returns.
 4. **Risk Metrics**: Calculated rolling volatility, maximum drawdowns, and correlation between assets.
@@ -78,10 +78,10 @@ The S&P 500 significantly outperformed UK assets, delivering 196% total returns 
 - **S&P 500 ↔ FTSE 100:** Correlation of 0.72 (similar equity market exposure)
 - **UK Gov Bonds ↔ GBP/USD:** Correlation of -0.08 (minimal relationship)
 
-These correlation patterns support traditional multi-asset portfolio construction, with bonds providing meaningful diversification against equity volatility.
+These low correlations between bonds and equities suggest potential for volatility reduction in combined portfolios.
 
 ## Tools Used
-- **Python** (pandas, numpy, matplotlib) – Data processing, return/risk calculations, statistical analysis
+- **Python** (pandas, numpy) – Data processing, return/risk calculations, statistical analysis
 - **SQLite** – Structured storage and efficient querying of time-series data
 - **Power BI** – Interactive dashboard and stakeholder-friendly reporting
 - **Excel** – Data validation and sense checks
@@ -101,8 +101,8 @@ The Power BI dashboard provides an interactive overview of:
 This project provides practical value for stakeholders by:
 - **Supporting evidence-based investment decisions** by comparing UK-relevant assets using consistent return and risk metrics.
 - **Quantifying risk exposure** through volatility and maximum drawdown, helping investors understand downside risk and capital preservation trade-offs.
-- **Improving portfolio construction** by using correlation analysis to identify diversification benefits across equities, bonds, and currency exposure.
+- **Informing portfolio construction** by using correlation analysis to identify diversification potential across equities, bonds, and currency exposure.
 - **Enabling repeatable reporting** through an automated Python → SQLite → Power BI workflow that can be refreshed with new price data.
 - **Delivering stakeholder-ready insights** via an interactive Power BI dashboard that summarises performance and risk at both trend and KPI level.
 
-Overall, the analysis demonstrates the trade-off between higher equity returns and higher downside risk, and highlights the role of bonds and currency exposure in diversification.
+Overall, the analysis demonstrates the trade-off between higher equity returns and higher downside risk, and highlights the role of bonds in providing portfolio diversification.
